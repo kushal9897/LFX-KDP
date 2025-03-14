@@ -24,7 +24,6 @@ Executes policies against predefined test cases to validate policy behavior. It 
   - `--namespace (-n)`: Limits resource scope to a specific namespace.
   - `--set`: Passes variable overrides to policies.
   - `--cluster`: Fetches resources directly from the cluster.
-  - `--stdin`: Allows piping in resource definitions.
   - `--json`: Supports JSON payloads.
   - `--detailed-results`: When enabled, prints the full mutated YAML for each resource.
 

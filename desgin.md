@@ -66,7 +66,7 @@ Executes policies against predefined test cases to validate policy behavior. It 
 - **Primary File:**
   - `cmd/cli/kubectl-kyverno/apply/apply.go`
 
-- **Key Areas to Modify:**
+- **Key Areas to Changes:**
 
   1. **Input Parsing:**
      - Ensure proper handling of policy file paths and resource file paths.
@@ -106,7 +106,7 @@ Executes policies against predefined test cases to validate policy behavior. It 
   4. **Exit Handling:**
      - Use an exit code of `0` when all tests pass or a non-zero code if any test fails.
 
-## 4. Workflow Summary (Combined)
+## 4. Workflow Summary
 
 ### Input Phase:
 - **For apply:**
@@ -132,15 +132,3 @@ Executes policies against predefined test cases to validate policy behavior. It 
   - Display a report showing pass/fail status for each test case.
   - Print detailed diffs for failures when `--detailed-results` is enabled.
   - Provide an overall summary of the test results.
-
-## 5. Summary of Code Changes in Simple Terms
-
-### For apply:
-- Update flag parsing to support new flags (e.g., `--detailed-results` and `--output`).
-- Enhance the main processing loop to check if `--detailed-results` is active, and if so, print the full mutated YAML.
-- Maintain existing error and skip messages for consistency.
-
-### For test:
-- Add or update a command file to handle test manifests.
-- Parse test cases from the manifest, run them by applying policies to resources, and compare results with expected outputs.
-- Generate a comprehensive report (including detailed diffs if requested) and set appropriate exit codes.

@@ -58,7 +58,7 @@ Executes policies against predefined test cases to validate policy behavior. It 
   - Overall test summary indicating the number of passed, failed, or skipped tests.
 - **Exit Codes:**
   - Exit code `0` for success (all tests pass) or a non-zero value if any test fails.
-  - 
+  
 ## 3. Workflow Summary
 
 ### Input Phase:

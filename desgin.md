@@ -59,12 +59,9 @@ Executes policies against predefined test cases to validate policy behavior. It 
 - **Exit Codes:**
   - Exit code `0` for success (all tests pass) or a non-zero value if any test fails.
 
-## 3. File Locations and Code Changes
+## 3. Code Changes
 
-### For the apply Command
-
-- **Primary File:**
-  - `cmd/cli/kubectl-kyverno/apply/apply.go`
+### For the apply Command:
 
 - **Key Areas to Changes:**
 

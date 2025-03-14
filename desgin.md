@@ -83,9 +83,6 @@ Executes policies against predefined test cases to validate policy behavior. It 
 
 ### For the test Command
 
-- **Primary File:**
-  - `cmd/cli/kubectl-kyverno/test/test.go` (or a similar file managing test functionality)
-
 - **Key Areas to Modify:**
 
   1. **Input Parsing:**

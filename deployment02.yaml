@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deployment-with-sidecar
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-with-sidecar
+  template:
+    metadata:
+      labels:
+        app: test-with-sidecar
+    spec:
+      initContainers:
+      - name: mesh-proxy
+        image: mesh/proxy:v1.0.0
+        args: ["proxy", "sidecar"]
+        restartPolicy: Always
+      containers:
+      - name: main-container
+        image: nginx:latest

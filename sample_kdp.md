@@ -60,4 +60,4 @@ A simplified flow of execution could look like:
    - Extend the policy loader to recognize MutatingAdmissionPolicies.
    - Implement mutation logic in CLI commands (`apply` and `test`).
    - Add CLI flags and update user messages.
-
+** test command and the mapping is pending**

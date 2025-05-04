@@ -1,5 +1,7 @@
 # Kyverno Design Proposal (KDP): `kyverno trace` Command
 
+## we are now to make it as a flag
+
 ##  What is the `trace` Command?
 
 The `trace` command helps users understand **why a Kyverno policy worked or didn’t work** on a given resource.
